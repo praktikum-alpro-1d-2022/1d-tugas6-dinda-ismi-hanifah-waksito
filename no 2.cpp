@@ -3,27 +3,28 @@
 using namespace std;
 
 int main (){
-    cout << "## Program C++ cek tahun kabisat ##" << endl;
-    cout << "===================================" << endl;
+  cout << "##  Program C++ Piramida Bintang  ##" << endl;
+  cout << "====================================" << endl;
+  cout << endl;
+
+  int tinggi_segitiga,i,j,k;
+
+  cout << "Input tinggi segitiga: ";
+  cin >> tinggi_segitiga;
+
+  cout << endl;
+
+  for(i=1; i<=tinggi_segitiga; i++) {
+
+    for(j=1; j<=tinggi_segitiga-i; j++) {
+      cout << " ";
+    }
+
+    for(k=1; k<=i; k++) {
+      cout << " *";
+    }
     cout << endl;
+  }
 
-    int year;
-
-    cout << "Input tahun: ";
-    cin >> year;
-
-    if (year % 400 == 0){
-       cout << year << "adalah tahun kabisat";
-    }
-    else if (year % 100 == 0){
-       cout << year << "bukan tahun kabisat";
-    }
-    else if (year % 4 == 0){
-       cout << year << "adalah tahun kabisat";
-    }
-    else {
-       cout << year << "bukan tahun kabisat";
-    }
-    cout << endl;
-    return 0;
+  return 0;
 }
